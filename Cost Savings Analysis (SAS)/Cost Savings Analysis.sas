@@ -43,7 +43,7 @@ data cost_savings_clean;
 	internal_price_num = input(compress(internal_price_char, '$ ,'), dollar12.2);
 	format internal_price_num dollar12.2; 
 	
-	* Clean up and convert date data into numeric with date format;
+	* Convert date data into numeric values with date format;
 	if not missing(date_char) then
 		date = input(strip(date_char), MMDDYY10.);
 	format date MMDDYY10.;
