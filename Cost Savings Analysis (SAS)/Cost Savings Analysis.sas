@@ -1,4 +1,31 @@
-/* COST SAVINGS ANALYSIS PROJECT */
+/*****************************************************************************
+* Program Name: cost_savings_analysis.sas
+* 
+* Purpose:      Analyzes vendor purchase data to identify cost savings 
+*               opportunities by comparing company's current purchase prices 
+*				against internal pricing. Quantifies potential savings and
+*				presents data visualizations.
+*
+* Author:       Kegan Johnson
+* Created:      Dec 2025
+* 
+* Input Data:   data/Raw Purchase Data.csv
+*               - Purchase history with vendor pricing
+*               - Internal pricing (IBPI)
+*               
+* Methodology:  - Data cleaning and validation
+*               - Outlier removal (top 1% of unit prices)
+*               - Aggregation by SKU with savings calculation
+*               - Visualization of cost savings opportunities
+*
+* Key Outputs:  - Summary report of savings by SKU (ranked)
+*               - Total potential savings calculation
+*               - Horizontal bar chart of top savings opportunities
+*               - Bubble plot showing price vs. volume drivers
+*
+* Technologies: SAS Base, SAS/GRAPH (PROC SGPLOT)
+*
+*****************************************************************************/
 
 * Assign file reference to CSV;
 filename rawdata "data/Raw Purchase Data.csv";
