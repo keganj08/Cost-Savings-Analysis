@@ -1,7 +1,7 @@
 /* COST SAVINGS ANALYSIS PROJECT */
 
 * Assign file reference to CSV;
-filename rawdata "mydata/Raw Purchase Data.csv";
+filename rawdata "data/Raw Purchase Data.csv";
 
 /* Import data from CSV; Clean and format it */
 data cost_savings_clean;
