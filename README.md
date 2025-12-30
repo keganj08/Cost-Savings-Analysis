@@ -1,7 +1,7 @@
 # Cost-Savings-Analysis
 A SAS cost savings analysis from raw purchase data in CSV form.
 
-This SAS program analyzes a CSV of product purchase records and alternate equivalent product offerings, comparing pricing to identify potential cost savings. The program imports raw data, cleans, validates, and formats it, calculate savings by SKU, and produces summary tables and visualizations.
+This SAS program analyzes a CSV of product purchase records and alternative equivalent product offerings, comparing pricing to identify potential cost savings. The program imports raw data, cleans, validates, and formats it, calculates savings by SKU, and produces summary tables and visualizations.
 
 ## Contents
 - cost_savings.sas — Main SAS script
