@@ -1,7 +1,7 @@
 /* COST SAVINGS ANALYSIS PROJECT */
 
 * Assign file reference to CSV;
-filename rawdata "/home/u63530371/Cost Savings Analysis Project/mydata/Raw Data (NATT Items).csv";
+filename rawdata "mydata/Raw Purchase Data.csv";
 
 /* Import data from CSV; Clean and format it */
 data cost_savings_clean;
