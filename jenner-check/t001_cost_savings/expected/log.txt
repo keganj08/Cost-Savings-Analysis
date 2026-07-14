@@ -1,0 +1,57 @@
+NOTE: Jenner v1.5.30 (build v1.5.30+unknown.20260714T061458Z.x86_64-unknown-linux-gnu)
+
+NOTE: Option OBS changed to 100.
+NOTE: DATA cost_savings_clean
+
+NOTE: Processing inline DATALINES (45 lines)
+
+NOTE: Read 45 rows from DATALINES.
+NOTE: Wrote cost_savings_clean (45 rows, 11 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC UNIVARIATE
+NOTE: Output dataset stats has 1 observations and 1 variables.
+NOTE: DATA cost_savings_no_outliers
+
+
+NOTE: Read 45 rows from cost_savings_clean.
+NOTE: Wrote cost_savings_no_outliers (45 rows, 12 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SORT data=cost_savings_no_outliers
+
+NOTE: Read 45 rows from cost_savings_no_outliers.
+NOTE: Wrote cost_savings_no_outliers (45 rows, 12 columns).
+NOTE: PROC SORT statement used.
+NOTE: DATA cost_savings_totaled_collapsed
+
+
+NOTE: Read 45 rows from cost_savings_no_outliers.
+NOTE: Wrote cost_savings_totaled_collapsed (10 rows, 7 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SORT data=cost_savings_totaled_collapsed
+
+NOTE: Read 10 rows from cost_savings_totaled_collapsed.
+NOTE: Wrote cost_savings_sorted (10 rows, 7 columns).
+NOTE: PROC SORT statement used.
+NOTE: DATA cost_savings_labeled
+
+
+NOTE: Read 10 rows from cost_savings_sorted.
+NOTE: Wrote cost_savings_labeled (10 rows, 7 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC PRINT data=cost_savings_labeled
+
+NOTE: PROC PRINT completed: 10 observations printed, 7 variables
+NOTE: PROC SGPLOT data=cost_savings_sorted
+
+NOTE: PROC SGPLOT output written to: ./ods_output/sgplot.svg
+NOTE: PROC SGPLOT data=cost_savings_labeled
+
+NOTE: PROC SGPLOT output written to: ./ods_output/sgplot1.svg
