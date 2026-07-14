@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_cost_savings",
+  "source_file": "Cost Savings Analysis (SAS)/Cost Savings Analysis.sas",
+  "source_blob_sha": "7d874b5341871312cd8c65a2c91a8c3c6c99ab8b",
+  "source_commit": "2c1f46a90d1f4aea4b9b61a96019fbdfeb42b3c6",
+  "notes": "Full cost-savings pipeline (DATA step import, PROC UNIVARIATE 99th-pctl outlier trim, BY-group first./last. aggregation with RETAIN, ranked PROC PRINT with SUM, two PROC SGPLOT charts). Only adaptation: the external CSV read (filename/infile) was replaced by an inline DATALINES block holding 45 rows sampled from the repo's own data/Raw Purchase Data.csv; all analysis logic unchanged."
+}
